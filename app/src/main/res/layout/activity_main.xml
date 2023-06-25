@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/fon1" />
+        <ImageView
+            android:id="@+id/logoGame"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo1" />
+        <ImageView
+            android:id="@+id/bottPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/bott_play"
+            android:visibility="gone"
+            />
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="120dp">
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/progressBar"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        app:progressView_radius="21dp"
+        app:progressView_max="100"
+        app:progressView_colorProgress="#84158C"
+        app:progressView_colorBackground="#EC2DCB"
+        app:progressView_progressFromPrevious="true"
+        />
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/progresStyle"
+    android:layout_width="250dp"
+    android:layout_height="45dp"
+    android:background="@drawable/backgraund_progress">
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/statusProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="65%"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+    </FrameLayout>
+</FrameLayout>
+
+    </FrameLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
